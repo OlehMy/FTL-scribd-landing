@@ -8,7 +8,131 @@
     <link rel="icon" href="images/favicon.png">
   </head>
   <body class="page__body">
-    <h1>Hello, world!</h1>
+    <header class="page__header header">
+      <div class="header__container container">
+        <div class="header__wrapper">
+          <div class="header__top-action top-action">
+            <a href="#">
+              <img
+                src="./images/logo.svg"
+                alt="logo"
+                class="top-action__logo"
+              >
+            </a>
+
+            <div class="top-action__right-group">
+              <nav class="top-action__nav nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#catalog" class="nav__link">Catalog</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#blog" class="nav__link">Blog</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#support" class="nav__link">Support</a>
+                  </li>
+                </ul>
+              </nav>
+  
+              <div class="top-action__icon">
+                <a href="#menu" class="icon icon--menu"></a>
+              </div>
+  
+              <a href="#">
+                <button class="top-action__btn button">Sing in</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="header__content">
+            <div class="header__description">
+              <h1 class="header__title">
+                Here You Can
+                <br>
+                Find Your
+                <br>
+                Favourite
+                <br>
+                Book
+              </h1>
+
+              <p class="header__text">
+                Explore audiobooks, ebooks, magazines, podcasts, and more.
+              </p>
+
+              <a href="#">
+                <button class="header__btn button">Try It For Free</button>
+              </a>
+
+              <p class="header__price">
+                Only $8.99/month after. Cancel anytime.
+              </p>
+            </div>
+
+            <div class="header__img-wrapper">
+              <img
+                class="header__img"
+                alt="man with book"
+                src="./images/jpg/header.jpg"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="page__menu menu" id="menu">
+      <div class="menu__container container">
+        <div class="menu__content">
+          <div class="menu__top-action top-action">
+            <div class="top-action__wrapper">
+              <a href="#">
+                <img
+                  src="./images/logo.svg"
+                  alt="logo"
+                  class="top-action__logo"
+                >
+              </a>
+              <div class="top-action__right-group">
+                <div class="top-action__icon">
+                  <a href="#" class="icon icon--cross"></a>
+                </div>
+    
+                <a href="#">
+                  <button class="top-action__btn button">Sing in</button>
+                </a>
+              </div>
+            </div>
+
+            <a href="#">
+              <button class="top-action__btn--mobile button">Sing in</button>
+            </a>
+          </div>
+    
+          <nav class="menu__nav nav">
+            <ul class="nav__list nav__list--tablet">
+              <li class="nav__item nav__item--tablet">
+                <a href="#catalog" class="nav__link">Catalog</a>
+              </li>
+              <li class="nav__item nav__item--tablet">
+                <a href="#about" class="nav__link">About</a>
+              </li>
+              <li class="nav__item nav__item--tablet">
+                <a href="#blog" class="nav__link">Blog</a>
+              </li>
+              <li class="nav__item nav__item--tablet">
+                <a href="#support" class="nav__link">Support</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+    
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

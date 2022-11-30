@@ -1,0 +1,59 @@
+.top-action {
+  &__wrapper {
+    @extend %flex-row-sb;
+    padding-bottom: 48px;
+    width: 100%;
+  }
+
+  &__logo {
+    width: 210px;
+
+    @include onMobile {
+      width: 180px;
+    }
+  }
+
+  &__right-group {
+    @extend %flex-row-sb;
+
+    &--hiden {
+      @include onTablet {
+        display: none;
+      }
+    }
+  }
+
+  &__nav {
+    @include onTablet {
+      display: none;
+    }
+  }
+
+  &__icon {
+    display: none;
+    width: 32px;
+    height: 32px;
+
+    @include onTablet {
+      display: block;
+    }
+  }
+
+  &__btn {
+    width: 140px;
+    margin-left: 50px;
+
+    @include onMobile {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @include onMobile {
+        display: block;
+        width: 140px;
+      }
+    }
+  }
+}

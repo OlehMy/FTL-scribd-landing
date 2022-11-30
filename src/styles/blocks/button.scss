@@ -1,0 +1,14 @@
+.button {
+  height: 70px;
+
+  font-size: 24px;
+  font-weight: 500;
+  color: $c-primary;
+  background-color: $c-secondary;
+  border: 2px solid $c-secondary;
+  border-radius: 10px;
+  cursor: pointer;
+
+  @include active(box-shadow, 0 0 5px $c-secondary);
+  @include hover-2(background-color, $c-primary, color, $c-secondary);
+}

@@ -1,0 +1,47 @@
+.nav {
+  &__list {
+    @extend %flex-row-sb;
+
+    list-style: none;
+
+    &--tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    margin-right: 100px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--tablet {
+      margin-right: 0;
+      margin-bottom: 48px;
+
+      font-size: 32px;
+      line-height: 32px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $c-txt-dark;
+
+    &:hover {
+      transform: translateX(5px);
+    }
+
+    @include active-2(color, $c-secondary, text-shadow, 0 0 3px $c-secondary);
+    @include hover(color, $c-secondary);
+  }
+}
