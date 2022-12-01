@@ -1,4 +1,4 @@
-.subscription-item {
+.subscription-card {
   &__icon {
     height: 70px;
     width: 70px;
@@ -10,6 +10,7 @@
   }
 
   &__title {
+    font-weight: 400;
     color: $c-txt-light;
     text-align: center;
   }
