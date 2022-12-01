@@ -1,0 +1,16 @@
+.subscription-item {
+  &__icon {
+    height: 70px;
+    width: 70px;
+    margin: 0 auto 25px;
+    @extend %flex-row-c;
+
+    background-color: $c-secondary;
+    border-radius: 10px;
+  }
+
+  &__title {
+    color: $c-txt-light;
+    text-align: center;
+  }
+}

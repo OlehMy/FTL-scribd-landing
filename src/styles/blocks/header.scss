@@ -16,12 +16,10 @@
   &__content {
     @extend %flex-row-sb;
     flex-wrap: nowrap;
-    margin-bottom: 150px;
     width: 100%;
 
     @include onMobile {
       flex-wrap: wrap;
-      margin-bottom: 0;
     }
   }
 
@@ -47,8 +45,9 @@
     }
 
     @include onMobile {
-      text-align: center;
       font-size: 40px;
+      line-height: 150%;
+      text-align: center;
     }
   }
 
