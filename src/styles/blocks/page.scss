@@ -40,5 +40,9 @@
 
   &__section {
     padding-bottom: 100px;
+
+    @include onMobile {
+      padding-bottom: 80px;
+    }
   }
 }

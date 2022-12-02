@@ -1,0 +1,33 @@
+.sing-up {
+  &__container {
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    @extend %flex-col;
+    padding: 20px;
+    background-color: $c-bg-form;
+  }
+
+  &__title {
+    padding-bottom: 10px;
+
+    @include onTablet {
+      font-size: 42px;
+    }
+  }
+
+  &__subtitle {
+    padding-bottom: 40px;
+    
+    @include onTablet {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+
+  &__form {
+    @extend %flex-col;
+    max-width: 460px;
+  }
+}

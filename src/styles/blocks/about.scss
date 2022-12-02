@@ -12,6 +12,12 @@
       padding: 30px 0 20px;
       background-color: $c-bg-about;
     }
+
+    @include onMobile {
+      &:not(:last-child) {
+        margin-bottom: 60px;
+      }
+    }
   }
 
   &__section {

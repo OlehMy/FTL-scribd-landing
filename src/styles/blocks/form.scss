@@ -1,0 +1,86 @@
+.form {
+  width: 100%;
+  min-width: fit-content;
+
+  &__input {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+    color: $c-txt-light;
+    font-family: "Mitr", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 10px;
+
+    &::placeholder {
+      color: $c-txt-light-2;
+      font-family: "Mitr", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+    }
+  }
+
+  &__label {
+    align-self: start;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: $c-txt-light;
+  }
+
+  
+  &__btn {
+    width: 100%;
+    min-width: fit-content;
+    margin-bottom: 30px;
+  }
+
+  &__google-btn {
+    height: 70px;
+    width: 100%;
+    min-width: fit-content;
+    margin-bottom: 30px;
+
+    font-family: "Mitr", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: $c-txt-light;
+    background-color: $c-primary;
+    border: 2px solid $c-primary;
+    border-radius: 10px;
+    cursor: pointer;
+
+    @include onMobile {
+      font-size: 18px;
+    }
+  
+    @include active(box-shadow, 0 0 5px $c-secondary);
+    @include hover(border-color, $c-secondary);
+  }
+
+  &__google-icon-wrapper {
+    position: relative;
+    margin-left: 10px;
+  }
+
+  &__google-icon {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    
+    @include onMobile {
+      width: 18px;
+      transform: translate(-10%, -50%);
+    }
+  }
+
+  &__sing-in {
+    text-align: center;
+    color: $c-txt-light;
+  }
+
+  &__sing-in-link {
+    color: $c-secondary;
+    white-space: nowrap;
+  }
+}

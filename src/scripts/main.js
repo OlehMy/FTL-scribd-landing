@@ -47,3 +47,11 @@ const swiper = new Swiper('.swiper', {
 
   modules: [Scrollbar],
 });
+
+// form
+const form = document.querySelector('form');
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  e.target.reset();
+});
