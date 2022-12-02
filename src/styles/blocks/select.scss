@@ -1,0 +1,47 @@
+.select {
+	margin: 0 auto;
+	position: relative;
+	width: 160px;
+
+  &.is-active .select__body {
+    display: block;}
+  
+  &__header {
+    display: flex;
+    color: $c-primary;
+    background-color: $c-secondary;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  &__current {
+    font-size: 20px;
+    padding: 6px 16px;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  &__body {
+    color: $c-primary;
+    background-color: $c-secondary;
+    border-radius: 10px;
+    display: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+  }
+
+  &__item {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 6px 16px;
+
+    @include hover(color, $c-txt-dark);
+  }
+}
