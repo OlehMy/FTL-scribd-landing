@@ -56,6 +56,11 @@
     color: $c-txt-light;
   }
 
+  &__legal-item {
+    cursor: pointer;
+    @include hover(color, $c-txt-dark);
+  }
+
   &__social {
     @extend %flex-row-sb;
     width: 280px;
@@ -76,11 +81,13 @@
     height: 24px;
     margin-bottom: 24px;
   }
-
+  
   &__social-group-title {
     line-height: 24px;
     padding-left: 15px;
-    color: $c-txt-dark
+    color: $c-txt-dark;
+
+    @include hover(color, $c-txt-light);
   }
 
   &__free-up {

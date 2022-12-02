@@ -7,11 +7,17 @@
 
     background-color: $c-secondary;
     border-radius: 10px;
+    cursor: pointer;
+    
+    @include hover(transform, translateY(-10%));
   }
-
+  
   &__title {
     font-weight: 400;
     color: $c-txt-light;
     text-align: center;
+    cursor: pointer;
+
+    @include hover(color, $c-txt-dark);
   }
 }
