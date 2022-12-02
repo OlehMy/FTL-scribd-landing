@@ -1,0 +1,46 @@
+.catalog {
+  &__container {
+    margin: 0 auto;
+  }
+
+  &__title {
+    padding-bottom: 50px;
+    text-align: center;
+
+    @include onTablet {
+      padding-bottom: 30px;
+      font-size: 42px;
+    }
+  }
+
+  &__price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $c-txt-light-2;
+    text-align: center;
+  }
+
+  &__btn {
+    display: block;
+    width: 620px;
+    margin: auto;
+    margin-bottom: 10px;
+
+    @include onTablet {
+      max-width: 480px;
+      min-width: fit-content;
+    }
+
+    @include onMobile {
+      width: 100%;
+      min-width: fit-content;
+    }
+  }
+
+  &__swiper {
+    margin: auto;
+    max-width: 1920px;
+    margin-bottom: 30px;
+  }
+}

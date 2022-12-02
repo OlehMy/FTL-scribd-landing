@@ -1,0 +1,16 @@
+.swiper-wrapper {
+  margin-bottom: 20px;
+}
+
+.swiper-slide {
+  width: 300px;
+  text-align: center;
+}
+
+.swiper .swiper-scrollbar {
+  background-color: transparent;
+}
+
+.swiper .swiper-scrollbar-drag {
+  background-color: $c-secondary;
+}
